@@ -6,13 +6,15 @@
     <information>
       <category value="" />
       <displayname value="Redmine Action" />
-      <description value="The Redmine Action Plugin integrates dynaTrace in your existing Redmine ticketing system. The plugin creates a new Redmine issue for alerts triggered by dynaTrace and includes detailed information about the Incident in the created Redmine ticket." />
+      <description value="The Redmine Action Plugin integrates dynaTrace in your existing Redmine ticketing system. The plugin creates a new Redmine issue for alerts triggered by 
+
+dynaTrace and includes detailed information about the Incident in the created Redmine ticket." />
     </information>
     <configuration>
-      <property key="redmineServerURL" label="Redmine Server URL" type="string" description="URL of the Redmine Servel" default="" multiline="false" />
-      <property key="apiAccessKey" label="API Access Key" type="string" description="My property description ..." default="" multiline="false" />
-      <property key="projectKey" label="Project Key" type="string" description="My property description ..." default="" multiline="false" />
-      <property key="issueSubjectPrefix" label="Issue Subject Prefix" type="string" description="My property description ..." default="dynaTrace Alert" multiline="false" />
+      <property key="redmineServerURL" label="Redmine Server URL" type="string" description="URL of the Redmine Server" default="" multiline="false" />
+      <property key="apiAccessKey" label="API Access Key" type="string" description="User Api Access Key" default="" multiline="false" />
+      <property key="projectKey" label="Project Key" type="string" description="String based key of the project" default="" multiline="false" />
+      <property key="issueSubjectPrefix" label="Issue Subject Prefix" type="string" description="Subject prefix of the created issue" default="dynaTrace Alert" multiline="false" />
     </configuration>
   </extension>
   <extension point="com.dynatrace.diagnostics.pdk.action" id="hu.bakaibalazs.dynatrace.redmine.RedmineAction" name="Redmine Action">

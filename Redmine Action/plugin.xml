@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by dynaTrace Client 6.1.0 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="hu.bakaibalazs.dynatrace.redmine" name="Redmine Action">
+    <information>
+      <category value="" />
+      <displayname value="Redmine Action" />
+      <description value="The Redmine Action Plugin integrates dynaTrace in your existing Redmine ticketing system. The plugin creates a new Redmine issue for alerts triggered by dynaTrace and includes detailed information about the Incident in the created Redmine ticket." />
+    </information>
+    <configuration>
+      <property key="redmineServerURL" label="Redmine Server URL" type="string" description="URL of the Redmine Servel" default="" multiline="false" />
+      <property key="apiAccessKey" label="API Access Key" type="string" description="My property description ..." default="" multiline="false" />
+      <property key="projectKey" label="Project Key" type="string" description="My property description ..." default="" multiline="false" />
+      <property key="issueSubjectPrefix" label="Issue Subject Prefix" type="string" description="My property description ..." default="dynaTrace Alert" multiline="false" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.action" id="hu.bakaibalazs.dynatrace.redmine.RedmineAction" name="Redmine Action">
+    <plugin configid="hu.bakaibalazs.dynatrace.redmine" class="hu.bakaibalazs.dynatrace.redmine.RedmineAction" />
+  </extension>
+</plugin>
+

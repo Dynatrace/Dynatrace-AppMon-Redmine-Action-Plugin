@@ -77,23 +77,6 @@ public class RedmineAction implements Action {
 	@Override
 	public void teardown(ActionEnvironment env) throws Exception {
 		log.fine("Redmine Action tear down");
-	}
-	
-	
-	public static void main(String[] args) throws Exception {
-		String uri = "http://hibajegy.kh.hu";
-	    String apiAccessKey = "3b72ae72c583f28b83c10b124d47928388db22c1";
-	    String projectKey = "ci-nlr-teszt";
-	    Integer queryId = null; 
-
-	    RedmineManager mgr = RedmineManagerFactory.createWithApiKey(uri, apiAccessKey);
-	    IssueManager issueManager = mgr.getIssueManager();
-	    java.util.List<Issue> issues = issueManager.getIssues(projectKey, queryId);
-	    for (Issue issue : issues) {
-	        System.out.println(issue.getSubject()+" - "+issue.getPriorityId());
-	    }
-
-	}
-	
+	}	
 	
 }

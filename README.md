@@ -4,9 +4,7 @@ The Redmine Action Plugin integrates dynaTrace in your existing Redmine ticketin
 Support until Redmine 2.6.0 using REST API
 
 Balázs Bakai (balazsDOTbakaiATtelviceDOThu)
-
 www.bakaibalazs.hu
-
 Telvice Kft.
 
-Find further information in the dynaTrace community
+Find further information in the dynaTrace community site

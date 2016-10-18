@@ -9,4 +9,4 @@ www.bakaibalazs.hu
 
 Telvice Kft.
 
-Find further information in the dynaTrace community site
+Find further information in the [Dynatrace community](https://community.dynatrace.com/community/display/DL/Redmine+Action+plugin)
